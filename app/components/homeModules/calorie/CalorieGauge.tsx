@@ -7,7 +7,7 @@ interface CalorieGaugeProps {
 }
 
 const CalorieGauge: React.FC<CalorieGaugeProps> = ({ total, consumed }) => {
-  const radius = 120;
+  const radius = 150;
   const stroke = 10;
   const circumference = Math.PI * radius; // half-circle
   const remaining = Math.max(total - consumed, 0);

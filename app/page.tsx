@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Module from "./components/ui/Module";
 import CalorieModule from "./components/homeModules/calorie/CalorieModule";
 import WeightModule from "./components/homeModules/weight/WeightModule";
+import DietModule from "./components/homeModules/diet/DietModule";
 
 export default function Home() {
   return (
@@ -15,11 +16,11 @@ export default function Home() {
         </Avatar>
         <p className="text-3xl">Welcome, Guest</p>
       </div>
-      
+
       <div className="flex flex-wrap justify-center items-center gap-12">
         <CalorieModule />
         <WeightModule />
-        <Module title="DIET" />
+        <DietModule />
         <Module title="EXERCISE" />
       </div>
     </Container>

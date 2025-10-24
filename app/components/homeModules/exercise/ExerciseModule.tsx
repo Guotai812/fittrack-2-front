@@ -8,7 +8,12 @@ export default function ExerciseModule({ ...props }: ExerciseModuleProps) {
   const m = 20;
   const volume = 18021;
   return (
-    <DietExModuleTemp kcal={200} className="justify-center gap-32" {...props}>
+    <DietExModuleTemp
+      type={"EXERCISE"}
+      kcal={200}
+      className="justify-center gap-32"
+      {...props}
+    >
       <ExerciseDataTag iconUrl="/clock.svg" type="DURATION">
         {h}
         <span className="text-sm">h</span>

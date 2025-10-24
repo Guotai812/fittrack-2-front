@@ -1,10 +1,10 @@
 "use client";
 import Container from "./components/ui/Container";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import Module from "./components/ui/Module";
 import CalorieModule from "./components/homeModules/calorie/CalorieModule";
 import WeightModule from "./components/homeModules/weight/WeightModule";
 import DietModule from "./components/homeModules/diet/DietModule";
+import ExerciseModule from "./components/homeModules/exercise/ExerciseModule";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <CalorieModule />
         <WeightModule />
         <DietModule />
-        <Module title="EXERCISE" />
+        <ExerciseModule />
       </div>
     </Container>
   );

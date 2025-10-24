@@ -1,6 +1,8 @@
-import Container from "./components/Container";
+"use client";
+import Container from "./components/ui/Container";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import Module from "./components/Module";
+import Module from "./components/ui/Module";
+import CalorieModule from "./components/homeModules/calorie/CalorieModule";
 
 export default function Home() {
   return (
@@ -13,10 +15,10 @@ export default function Home() {
         <p className="text-3xl">Welcome, Guest</p>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-12">
-        <Module title="CALORIES"/>
-        <Module title="WEIGHT"/>
-        <Module title="DIET"/>
-        <Module title="EXERCISE"/>
+        <CalorieModule />
+        <Module title="WEIGHT" />
+        <Module title="DIET" />
+        <Module title="EXERCISE" />
       </div>
     </Container>
   );

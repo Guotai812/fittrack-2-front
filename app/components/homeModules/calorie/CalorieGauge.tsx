@@ -52,7 +52,7 @@ const CalorieGauge: React.FC<CalorieGaugeProps> = ({ total, consumed }) => {
         y="70%"
         dominantBaseline="middle"
         textAnchor="middle"
-        fontSize="32"
+        fontSize="36"
         className="font-san fill-white"
       >
         {Math.round((total - consumed) * 10) / 10} KCAL
